@@ -10,10 +10,50 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_26_155007) do
+ActiveRecord::Schema.define(version: 2019_08_27_192543) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "herb_collections", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "herb_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "herbs", force: :cascade do |t|
+    t.string "name"
+    t.string "aka"
+    t.string "image"
+    t.text "use"
+    t.string "caution"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "notes", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "remedy_id"
+    t.integer "herb_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "remedies", force: :cascade do |t|
+    t.string "image"
+    t.string "ailment"
+    t.text "solution"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "remedy_collections", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "remedy_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "username"

@@ -1,0 +1,2 @@
+class HerbCollectionsController < ApplicationController
+end
