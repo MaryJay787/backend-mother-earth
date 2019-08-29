@@ -1,4 +1,5 @@
 class HerbsController < ApplicationController
+    skip_before_action :authorized
 
     def index
         herbs = Herb.all

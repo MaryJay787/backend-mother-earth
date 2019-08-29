@@ -12,7 +12,7 @@ Rails.application.routes.draw do
     resources :notes
   end
 
-  resources :herbs, :remedies
+  resources :herbs, :remedies, :plants
 
   resources :users, only: [:create]
   post '/login', to: 'auth#create'
