@@ -1,4 +1,5 @@
 class HerbsController < ApplicationController
+
     def index
         herbs = Herb.all
         render json: {allherbs: herbs}
