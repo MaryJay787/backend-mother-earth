@@ -1,4 +1,6 @@
 class RemediesController < ApplicationController
+    skip_before_action :authorized
+
     def index
         remedies = Remedy.all
         render json: {allremedies: remedies}

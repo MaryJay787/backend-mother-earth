@@ -1,6 +1,7 @@
 User.destroy_all
 Herb.destroy_all
 HerbCollection.destroy_all
+Remedy.destroy_all
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
@@ -276,3 +277,64 @@ image: 'https://www.herbwisdom.com/app/herbwisdom/assets/images/1d298607924d8da7
 
 
 one = HerbCollection.create(user_id: adam.id, herb_id: chamomile.id)
+
+badbreath = Remedy.create(image: 'https://freedomdental.com.au/wp-content/uploads/2018/06/fix-bad-breath.jpg', 
+ailment: 'Bad Breath', 
+solution: 'Oil Pulling: Simply swish around a table spoon of coconut oil in your mouth for 20 minutes each day before cleaning your teeth.')
+
+earache = Remedy.create(image: 'https://aafiya.ae/aafiya-blog/wp-content/uploads/2019/01/earaches.jpg', 
+ailment: 'Earache', 
+solution: 'Garlic: Chop 5 cloves garlic finely; place in a small baking dish with 4 ounces olive oil. Cook overnight over low heat. Press garlic cloves well and strain. Add 20 drops eucalyptus essential oil and mix well. Store in an amber bottle. To use: Heat eyedropper under hot water and dry. Place 2 drops oil in both ears every half-hour, or as often as needed, for 2 to 7 days.')
+
+strepthroat = Remedy.create(image: 'https://www.sciencenewsforstudents.org/sites/default/files/scald-image/860_strep_throat_tonsils.png', 
+ailment: 'Strep Throat', 
+solution: 'Echinacea: Hold 1/2 teaspoon Echinacea angustifolia tincture in mouth; allow to dribble slowly down throat. Repeat hourly.')
+
+uti = Remedy.create(image: 'https://assets.teenvogue.com/photos/5583d617c3f29bdf1f2cd210/16:9/w_1280%2Cc_limit/my-life-health-2014-04-uti-big.jpg', 
+ailment: 'Urinary Tract Infection', 
+solution: 'Juniper Berris: Juniper berries combined with bidens (such as Spanish needles or beggar’s ticks) will almost always work. Juniper berries must be tinctured in alcohol or eaten whole to be effective. Take 5 to 20 drops juniper berry tincture up to 3 times daily. The most potent forms of bidens are fresh-plant alcohol tinctures and the fresh juice. Take 45 to 90 drops of a fresh-plant tincture up to 4 times daily. For a tincture made from the dried plant, triple the dose.')
+
+wounds = Remedy.create(image: 'https://cdn.shopify.com/s/files/1/1045/8420/products/Monster_FX_Large_Slash_Wound_-_RED_CARPET_FX_1600x.jpg?v=1541247518', 
+ailment: 'Wounds', 
+solution: 'Honey: Honey has worked for thousands of years. Organic wildflower honey is best. Many products sold as “honey” are actually corn syrup, so buy local honey if possible. Apply directly to wounds, then cover with a bandage. Change bandage daily.')
+
+staph = Remedy.create(image: 'https://images.emedicinehealth.com/images/quiz/mrsa/mrsa-s-9.jpg', 
+ailment: 'Staph Infections', 
+solution: 'Bidens, Black Pepper, Cryptolepis, Ginger, Honey, Juniper Berry, Reishi Mushrooms, Sida: Cryptolepis can be prepared as a powder, capsules, tea or tincture. For bacterial skin infections or wound sepsis, sprinkle the powder on the infection as frequently as needed. For antibiotic-resistant staph infection, take 1/2 to 1 teaspoon tincture 3 times daily. In very severe cases, increase the dose to 1 tablespoon 3 times daily.')
+
+Remedy.create(image: 'https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/03/01040236/5065345783_b2c2cab1d3_z.jpg', 
+ailment: 'Forgetting', 
+solution: 'Gingko biloba: 120 milligrams daily in tincture or capsules.')
+
+Remedy.create(image: 'https://cdn.shopify.com/s/files/1/0394/7497/articles/PMS_880x.jpg?v=1544462320', 
+ailment: 'Premenstrual Syndrome', 
+solution: 'Black Cohosh: Suggested used amount is 20-40 milligram of a extract taken twice a day.')
+
+Remedy.create(image: 'https://www.niddk.nih.gov/-/media/Images/Health-Information/Digestive-Diseases/stomach-pain_400x267.jpg?la=en&hash=EE0F815689AE8A25C52FCDE86042487E', 
+ailment: 'Indigestion', 
+solution: 'Peppermint: Peppermint tea or oil drunked is suggested to provide some relief.')
+
+Remedy.create(image: 'https://medlineplus.gov/images/Diabetes.jpg', 
+ailment: 'Diabetes & Pre-diabetes', 
+solution: 'Fenugreek: Daily dose of 10 grams of fenugreek seeds soaked in hot water may help control type-2 diabetes.')
+
+Remedy.create(image: 'https://www.homeremedyhacks.com/wp-content/uploads/2016/03/Home-Remedies-for-Brittle-Nails-696x451.jpg',
+ailment: 'Weak, Brittle Nails',
+solution: 'Coconut Oil: Try massaging coconut oil into your nails')
+
+Remedy.create(image: 'https://timedotcom.files.wordpress.com/2017/12/anxiety-disorder-symptoms-signs.jpg',
+ailment: 'Anxiety',
+solution: 'Kava Kava: Kava kava is available over-the-counter in the form of beverages, extracts, capsules, tablets, and topical solutions. Dosage guidelines recommend not exceeding 250 mg of the supplement within a 24-hour period.')
+
+
+Remedy.create(image: 'https://www.irishtimes.com/polopoly_fs/1.2836020.1476907697!/image/image.jpg_gen/derivatives/box_620_330/image.jpg',
+ailment: 'Preventing Cold or Flu',
+solution: 'Echinacea: Echinacea tea, 6-8 ounces, four times daily. Echinacea appears to be most effective when started as soon as symptoms are noticed, taken many times a day, and used for seven to 10 days.')
+
+Remedy.create(image: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2015/02/headache-1451572202.jpg?resize=480:*',
+ailment: 'Headache',
+solution: 'Feverfew, Peppermint, Ginger:  Take 100–300 mg, up to 4 times daily, standardized to contain 0.2–0.4% parthenolides. Feverfew may be used to prevent or to stop a migraine headache.')
+
+Remedy.create(image: 'http://millervein.wpengine.com/wp-content/uploads/2018/02/iStock-636765982.jpg',
+ailment: 'Varicose Veins',
+solution: 'Horse Chestnut: 300 mg of horse chestnut seed extract containing 50 mg of the active ingredient, aescin, twice daily.')
