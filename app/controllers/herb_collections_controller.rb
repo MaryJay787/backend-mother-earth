@@ -14,7 +14,7 @@ class HerbCollectionsController < ApplicationController
         # user = User.find(params[:user_id])
         # herb = Herb.find(params[:herb_id])
         hc = HerbCollection.create(herb_collection_params)
-        # render json: {newuserherb: user.herbs }
+        render json: {newuserherb: hc}
     end
 
     def destroy
