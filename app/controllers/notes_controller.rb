@@ -5,7 +5,8 @@ class NotesController < ApplicationController
     end
 
     def create
-        Note.create(note_params)
+        new = Note.create(note_params)
+        render json: {newNote: new }
     end
 
     def show
@@ -36,6 +37,6 @@ class NotesController < ApplicationController
     private
 
     def note_params
-        params.permit(:user_id, :herb_id, :remedy_id, :content)
+        params.permit(:user_id, :herb_id, :remedy_id, :content, :title, :date)
     end
 end
