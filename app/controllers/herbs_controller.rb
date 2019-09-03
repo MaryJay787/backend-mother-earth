@@ -13,7 +13,7 @@ class HerbsController < ApplicationController
 
     def show
         herb = Herb.find(params[:id])
-        render json: herb.one_herb
+        render json: { oneHerb: herb }
     end
 
     # def edit
