@@ -37,6 +37,6 @@ class NotesController < ApplicationController
     private
 
     def note_params
-        params.permit(:user_id, :herb_id, :remedy_id, :content, :title, :date)
+        params.permit(:user_id, :herb_id, :remedy_id, :content, :title, :date, :image, :subject_name)
     end
 end
