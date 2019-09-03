@@ -13,7 +13,7 @@ class RemediesController < ApplicationController
 
     def show
         remedy = Remedy.find(params[:id])
-        render json: {oneremedy: remedy}
+        render json: {oneRemedy: remedy}
     end
 
     # def edit
