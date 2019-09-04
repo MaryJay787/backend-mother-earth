@@ -31,6 +31,7 @@ class NotesController < ApplicationController
     def destroy
         user = User.find(params[:user_id])
         user.notes.find(params[:id]).destroy
+        render json:{message: 'Note Deleted'}
         # Note.find(params[:id]).destroy
     end
 
