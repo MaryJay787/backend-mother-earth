@@ -21,6 +21,7 @@ class HerbCollectionsController < ApplicationController
         user = User.find(params[:user_id])
         herb = user.herbs.find(params[:herb_id])
         herb.destroy
+        render json:{message: 'Herb Deleted'}
     end
 
     private

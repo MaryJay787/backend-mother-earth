@@ -19,6 +19,7 @@ class RemedyCollectionsController < ApplicationController
         user = User.find(params[:user_id])
         remedy = user.remedies.find(params[:remedy_id])
         remedy.destroy
+        render json:{message: 'Remedy Deleted'}
     end
 
     private
