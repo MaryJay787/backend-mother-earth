@@ -7,8 +7,8 @@ class RemediesController < ApplicationController
     end
 
     def create
-        Remedy.create(remedy_params)
-        # render json: {oneremedy: remedy}
+       remedy = Remedy.find_or_create_by(remedy_params)
+        render json: {oneremedy: remedy}
     end
 
     def show

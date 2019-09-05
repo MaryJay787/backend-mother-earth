@@ -7,8 +7,8 @@ class HerbsController < ApplicationController
     end
 
     def create
-        herb = Herb.create!(herb_params)
-        # render json: {oneherb: herb}
+        herb = Herb.find_or_create_by(herb_params)
+        render json: {oneherb: herb}
     end
 
     def show
