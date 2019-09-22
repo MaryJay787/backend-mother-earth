@@ -3,7 +3,8 @@ class HerbCollectionsController < ApplicationController
     def index
         user = User.find(params[:user_id])
         herbs = user.herbs
-        render json: {usersherbs: herbs}
+        user_herb_collects = user.herb_collections 
+        render json: {usersherbs: herbs, userCollects: user_herb_collects}
         # hcs = HerbCollection.all
         # render json: {allhcs: hcs} 
     end
@@ -19,14 +20,13 @@ class HerbCollectionsController < ApplicationController
 
     def destroy
         user = User.find(params[:user_id])
-        herb = user.herbs.find(params[:herb_id])
-        herb.destroy
+        user.herb_collections.find(params[:id]).destroy
         render json:{message: 'Herb Deleted'}
     end
 
     private
 
     def herb_collection_params
-        params.permit(:user_id, :herb_id)
+        params.permit(:user_id, :herb_id, :id)
     end
 end

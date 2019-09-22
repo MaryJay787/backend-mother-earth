@@ -339,3 +339,23 @@ solution: 'Feverfew, Peppermint, Ginger:  Take 100–300 mg, up to 4 times daily
 Remedy.create(image: 'http://millervein.wpengine.com/wp-content/uploads/2018/02/iStock-636765982.jpg',
 ailment: 'Varicose Veins',
 solution: 'Horse Chestnut: 300 mg of horse chestnut seed extract containing 50 mg of the active ingredient, aescin, twice daily.')
+
+Remedy.create(image: 'https://images.agoramedia.com/everydayhealth/gcms/Surprising-Causes-of-Adult-Acne-00-ALT-722x406.jpg',
+ailment: 'Acne',
+solution: 'Apple cider vinegar: Mix 1 part apple cider vinegar and 3 parts water (use more water for sensitive skin). After cleansing, gently apply the mixture to the skin using a cotton ball. Let sit for 5–20 seconds, rinse with water and pat dry. Repeat 1–2 times per day, as needed.')
+
+Remedy.create(image: 'https://www.readersdigest.ca/wp-content/uploads/sites/14/2016/05/6-natural-remedies-for-fatigue.jpg',
+ailment: 'Fatigue',
+solution: 'Siberian Ginseng, Goldenroot, American and Panax Ginseng: Take 100 to 200 milligrams once or twice a day, but check with your doctor first if you have diabetes, low blood sugar (they can lower blood sugar) or high blood pressure.')
+
+Remedy.create(image: 'https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/allergy_myths_and_facts_benadryl_slideshow/getty_rf_photo_of_woman_blowing_her_nose_near_bouquet.jpg',
+ailment: 'Allergies',
+solution: 'Butterbur, Garlic, Stinging Nettle Leaf: 600 mg of freeze-dried leaves per day. The dried leaves and flowers can be steeped to make a delicious herbal tea, while its leaves, stem and roots can be cooked and added to soups, stews, smoothies and stir-frys. However, avoid eating fresh leaves, as their barbs can cause irritation.')
+
+Remedy.create(image: 'https://medlineplus.gov/images/Migraine.jpg',
+ailment: 'Migraine',
+solution: 'Butterbur: This butterbur extract seems to reduce the number of migraine headaches by almost half. Doses of at least 75 mg twice daily seem to be necessary for best results. Lower doses of 50 mg twice daily may not be effective in adults.')
+
+Remedy.create(image: 'https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/video/wibbitz/wbz-fever-facts.jpg',
+ailment: 'Fever',
+solution: 'Belladonna, Aconite, Nux Vomica, Pulsatilla: The appropriate dose of belladonna depends on several factors such as the users age, health, and several other conditions. At this time there is not enough scientific information to determine an appropriate range of doses for belladonna.')

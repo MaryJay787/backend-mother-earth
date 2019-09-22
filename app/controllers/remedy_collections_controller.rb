@@ -2,7 +2,8 @@ class RemedyCollectionsController < ApplicationController
     def index
         user = User.find(params[:user_id])
         remedies = user.remedies
-        render json: {userRemedies: remedies}
+        user_rem_collects = user.remedy_collections 
+        render json: {userRemedies: remedies, userRemsCollects: user_rem_collects}
         # rcs = RemedyCollection.all
         # render json: {allrcs: rcs} 
     end
@@ -17,14 +18,13 @@ class RemedyCollectionsController < ApplicationController
 
     def destroy
         user = User.find(params[:user_id])
-        remedy = user.remedies.find(params[:remedy_id])
-        remedy.destroy
+        user.remedy_collections.find(params[:id]).destroy
         render json:{message: 'Remedy Deleted'}
     end
 
     private
 
     def remedy_collection_params
-        params.permit(:user_id, :remedy_id)
+        params.permit(:user_id, :remedy_id, :id)
     end
 end
